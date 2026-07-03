@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Season 48 — Survivor Pool</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="smooth.css">
+<style>
+  .tribe-badge { display:inline-block; padding:2px 10px; border-radius:9999px; font-size:.75rem; font-weight:600; color:white; }
+  .pairing-card {
+    transition: opacity .3s cubic-bezier(.25,.1,.25,1), outline-color .3s cubic-bezier(.25,.1,.25,1),
+                transform .35s cubic-bezier(.25,.1,.25,1), box-shadow .35s cubic-bezier(.25,.1,.25,1);
+  }
+  .pairing-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px -12px rgba(0,0,0,.55); }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+
+
+<!-- Season switcher (static site only) -->
+<nav class="glass border-b border-white/5 sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 h-14 flex items-center gap-2 overflow-x-auto">
+    <span class="text-amber-500 mr-1">&#x1F525;</span>
+    
+    <a href="index.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S50
+    </a>
+    
+    <a href="season-49.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S49
+    </a>
+    
+    <a href="season-48.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap bg-amber-500 text-slate-900 font-bold">
+      S48
+    </a>
+    
+    <a href="season-47.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S47
+    </a>
+    
+    <a href="season-46.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S46
+    </a>
+    
+    <a href="season-45.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S45
+    </a>
+    
+    <a href="season-44.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S44
+    </a>
+    
+    <a href="season-43.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S43
+    </a>
+    
+    <a href="season-42.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S42
+    </a>
+    
+    <a href="season-41.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S41
+    </a>
+    
+    <a href="season-40.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S40
+    </a>
+    
+    <a href="season-39.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S39
+    </a>
+    
+    <a href="season-38.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S38
+    </a>
+    
+    <a href="season-37.html"
+       class="px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap text-slate-400 hover:text-white">
+      S37
+    </a>
+    
+  </div>
+</nav>
+
+
+<!-- Header -->
+<div class="bg-gradient-to-b from-amber-950/50 to-slate-950 pb-10">
+  <div class="max-w-5xl mx-auto px-4 pt-12 text-center">
+    <div class="text-6xl mb-4">&#x1F525;</div>
+    <h1 class="text-5xl font-extrabold text-white mb-2">Season 48</h1>
+    
+    <div class="flex flex-wrap justify-center gap-2 mb-5">
+      
+      <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-full text-sm">&#x1F4C5; 2025-02-26</span>
+      
+      <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-full text-sm">&#x1F465; 36 players</span>
+      <span class="bg-slate-800 text-emerald-300 px-3 py-1 rounded-full text-sm font-semibold">&#x1F4B0; $1080 pot</span>
+      
+      <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-full text-sm font-semibold">Season Complete</span>
+      
+    </div>
+    <div>
+      
+      <span class="tribe-badge mr-1 mb-1" style="background-color:#ef4444">Civa</span>
+      
+      <span class="tribe-badge mr-1 mb-1" style="background-color:#3b82f6">Lagi</span>
+      
+      <span class="tribe-badge mr-1 mb-1" style="background-color:#22c55e">Vula</span>
+      
+    </div>
+  </div>
+</div>
+
+<main class="max-w-5xl mx-auto px-4 py-8">
+
+  <!-- Search -->
+  <div class="mb-10 max-w-lg mx-auto">
+    <p class="text-center text-slate-400 text-sm mb-3">Type your name to see how you're doing</p>
+    <div class="relative">
+      <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-lg">&#x1F50D;</span>
+      <input type="text" id="name-search" placeholder="Search for your name..." autocomplete="off"
+        class="w-full bg-slate-900 border border-slate-700 rounded-xl pl-12 pr-4 py-3.5 text-white focus:border-amber-500 focus:outline-none placeholder-slate-500 text-lg">
+    </div>
+
+    <!-- Personal summary card (filled in by JS when search matches one person) -->
+    <div id="personal-card" class="hidden mt-4 bg-gradient-to-br from-amber-950/40 to-slate-900 border border-amber-500/40 rounded-2xl p-5">
+      <div class="text-amber-400 font-bold text-lg mb-1" id="pc-greeting"></div>
+      <div class="text-white text-base mb-2" id="pc-pairing"></div>
+      <div class="flex items-center gap-3 flex-wrap text-sm" id="pc-stats"></div>
+    </div>
+  </div>
+
+  <!-- Pairings by tribe -->
+  <section class="mb-14">
+    <h2 class="text-2xl font-bold mb-1">Survivor Pairings</h2>
+    <p class="text-slate-400 text-sm mb-7">Each survivor has 2 pool players. Both players share all winnings from that survivor!</p>
+
+    
+    
+    <div class="mb-10">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="w-4 h-4 rounded-full flex-shrink-0" style="background-color:#ef4444"></span>
+        <h3 class="text-lg font-bold" style="color:#ef4444">Civa Tribe</h3>
+        <span class="text-slate-600 text-sm">(6 survivors)</span>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="matt francis|matt finelli"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>David Kinne</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 9th
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$20</div>
+              
+              <div class="text-xs text-slate-500">($10 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Matt Francis
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Matt Finelli
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            <span class="bg-blue-900/40 text-blue-300 text-xs px-2 py-0.5 rounded-full">&#x1F6E1; 1x immunity</span>
+            
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="adrienne mcgoey|john menz"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Kamilla Karthigesu</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 4th
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$40</div>
+              
+              <div class="text-xs text-slate-500">($20 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Adrienne McGoey
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> John Menz
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            <span class="bg-blue-900/40 text-blue-300 text-xs px-2 py-0.5 rounded-full">&#x1F6E1; 2x immunity</span>
+            
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="allie francis|jack murphy"
+             style="border-color:rgba(234,179,8,0.5);background-color:rgba(120,77,5,0.12);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F3C6;</span>
+                <span>Kyle Fraser</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 1st
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-amber-400">$630</div>
+              
+              <div class="text-xs text-slate-500">($315 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Allie Francis
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Jack Murphy
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            <span class="bg-blue-900/40 text-blue-300 text-xs px-2 py-0.5 rounded-full">&#x1F6E1; 2x immunity</span>
+            
+            
+            <span class="bg-purple-900/40 text-purple-300 text-xs px-2 py-0.5 rounded-full">&#x26A1; 1x adv</span>
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="kelli murray|dana farfalla"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Mitch Guerra</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 5th
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$10</div>
+              
+              <div class="text-xs text-slate-500">($5 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Kelli Murray
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Dana Farfalla
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            
+            <span class="bg-purple-900/40 text-purple-300 text-xs px-2 py-0.5 rounded-full">&#x26A1; 1x adv</span>
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="jenny kleber|jason alderisio"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Charity Nelms</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 13th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Jenny Kleber
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Jason Alderisio
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="val bianchini|brenda scott"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Chrissy Sarnowsky</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 10th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Val Bianchini
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Brenda Scott
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <div class="mb-10">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="w-4 h-4 rounded-full flex-shrink-0" style="background-color:#3b82f6"></span>
+        <h3 class="text-lg font-bold" style="color:#3b82f6">Lagi Tribe</h3>
+        <span class="text-slate-600 text-sm">(6 survivors)</span>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="margo and rich pelka|chris markham"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Star Toomey</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 8th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Margo and Rich Pelka
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Chris Markham
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="kevin going|chase turner"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Bianca Roses</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 14th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Kevin Going
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Chase Turner
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="dyanne going|chris murphy"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Joe Hunter</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 3rd
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$80</div>
+              
+              <div class="text-xs text-slate-500">($40 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Dyanne Going
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Chris Murphy
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            <span class="bg-blue-900/40 text-blue-300 text-xs px-2 py-0.5 rounded-full">&#x1F6E1; 4x immunity</span>
+            
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="joe giammarino|joy sobi"
+             style="border-color:rgba(148,163,184,0.35);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F948;</span>
+                <span>Eva Erickson</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 2nd
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$230</div>
+              
+              <div class="text-xs text-slate-500">($115 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Joe Giammarino
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Joy Sobi
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            <span class="bg-blue-900/40 text-blue-300 text-xs px-2 py-0.5 rounded-full">&#x1F6E1; 1x immunity</span>
+            
+            
+            <span class="bg-purple-900/40 text-purple-300 text-xs px-2 py-0.5 rounded-full">&#x26A1; 1x adv</span>
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="michael flynn|jan markham"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Thomas Krottinger</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 15th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Michael Flynn
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Jan Markham
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="jack alderisio|shannon hopkins"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Shauhin Davari</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 6th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Jack Alderisio
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Shannon Hopkins
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <div class="mb-10">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="w-4 h-4 rounded-full flex-shrink-0" style="background-color:#22c55e"></span>
+        <h3 class="text-lg font-bold" style="color:#22c55e">Vula Tribe</h3>
+        <span class="text-slate-600 text-sm">(6 survivors)</span>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="margaret cook|allison sidow"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Stephanie Berger</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 18th
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$60</div>
+              
+              <div class="text-xs text-slate-500">($30 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Margaret Cook
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Allison Sidow
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            
+            
+            <span class="bg-red-900/40 text-red-300 text-xs px-2 py-0.5 rounded-full">1st out</span>
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="sydney scott|doreen &amp; doug cook"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Saiounia “Sai” Hughley</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 12th
+              </div>
+              
+            </div>
+            
+            <div class="text-right ml-2 flex-shrink-0">
+              <div class="font-bold text-emerald-400">$10</div>
+              
+              <div class="text-xs text-slate-500">($5 ea)</div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Sydney Scott
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Doreen &amp; Doug Cook
+            </div>
+            
+            
+          </div>
+
+          
+          <div class="flex gap-1.5 mt-2.5 flex-wrap ml-5">
+            
+            
+            <span class="bg-purple-900/40 text-purple-300 text-xs px-2 py-0.5 rounded-full">&#x26A1; 1x adv</span>
+            
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="karla murphy|shannon reis"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Justin Pioppi</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 16th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Karla Murphy
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Shannon Reis
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="will farfalla|jay scott"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Mary Zheng</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 7th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Will Farfalla
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Jay Scott
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="dawn bianchini|sean reis"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Cedrek McFadden</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 11th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Dawn Bianchini
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Sean Reis
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="pairing-card bg-slate-900 border rounded-xl p-4"
+             data-entrants="christina genovese|brian mcgoey"
+             style="border-color:rgba(30,41,59,0.8);">
+
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1 min-w-0 opacity-50">
+              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                <span>&#x1F480;</span>
+                <span>Kevin Leung</span>
+              </div>
+              
+              <div class="text-xs text-slate-500 ml-5">
+                Finished 17th
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="space-y-1 ml-5 opacity-50">
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Christina Genovese
+            </div>
+            
+            
+            
+            <div class="text-sm text-slate-300">
+              <span class="text-slate-600">&#8226;</span> Brian McGoey
+            </div>
+            
+            
+          </div>
+
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Leaderboard (if season is in progress or complete) -->
+  
+  <section class="mb-14">
+    <h2 class="text-2xl font-bold mb-1">Final Standings</h2>
+    <p class="text-slate-400 text-sm mb-6">Each player's share of their survivor's total earnings</p>
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+      <table class="w-full">
+        <thead>
+          <tr class="border-b border-slate-800 text-slate-400 text-sm">
+            <th class="px-5 py-3 text-left w-14">#</th>
+            <th class="px-5 py-3 text-left">Player</th>
+            <th class="px-5 py-3 text-right">Earnings</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800">
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            &#x1F947;
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Allie Francis</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $315.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            &#x1F948;
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Jack Murphy</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $315.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            &#x1F949;
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Joe Giammarino</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $115.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            4
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Joy Sobi</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $115.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            5
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Dyanne Going</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $40.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            6
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Chris Murphy</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $40.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            7
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Margaret Cook</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $30.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            8
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Allison Sidow</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $30.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            9
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Adrienne McGoey</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $20.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            10
+          </td>
+          <td class="px-5 py-3 font-medium text-white">John Menz</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $20.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            11
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Matt Francis</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $10.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            12
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Matt Finelli</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $10.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            13
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Kelli Murray</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $5.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            14
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Dana Farfalla</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $5.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            15
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Sydney Scott</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $5.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-emerald-950/20 bg-emerald-950/5">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            16
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Doreen &amp; Doug Cook</td>
+          <td class="px-5 py-3 text-right font-bold text-emerald-400">
+            $5.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            17
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Jenny Kleber</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            18
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Jason Alderisio</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            19
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Val Bianchini</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            20
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Brenda Scott</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            21
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Margo and Rich Pelka</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            22
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Chris Markham</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            23
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Kevin Going</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            24
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Chase Turner</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            25
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Michael Flynn</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            26
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Jan Markham</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            27
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Jack Alderisio</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            28
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Shannon Hopkins</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            29
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Karla Murphy</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            30
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Shannon Reis</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            31
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Will Farfalla</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            32
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Jay Scott</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            33
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Dawn Bianchini</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            34
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Sean Reis</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            35
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Christina Genovese</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        <tr class="hover:bg-slate-800/20">
+          <td class="px-5 py-3 font-bold text-slate-400">
+            36
+          </td>
+          <td class="px-5 py-3 font-medium text-white">Brian McGoey</td>
+          <td class="px-5 py-3 text-right font-bold text-slate-600">
+            $0.00
+          </td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+
+  <!-- Payout Rules -->
+  <section class="mb-14">
+    <h2 class="text-2xl font-bold mb-1">How Payouts Work</h2>
+    <p class="text-slate-400 text-sm mb-7">Every dollar in the pot gets paid out based on your survivor's performance</p>
+    
+    <div class="grid gap-4 md:grid-cols-2">
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-lg text-red-400">1st Survivor Eliminated</h3>
+          <span class="text-3xl font-extrabold text-red-400">$30</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">The very first survivor out of the game — whether voted out, medically evacuated, or quit. If two survivors happen to be eliminated at the same time in the opening episode, the payout drops to $15 per survivor.</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-lg text-purple-400">Advantage Played</h3>
+          <span class="text-3xl font-extrabold text-purple-400">$5</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Any time a survivor plays an advantage — whether it works or not. This includes hidden immunity idols, steal-a-vote, extra vote, knowledge-is-power, etc. <strong class="text-slate-300">Does not</strong> include forced plays like "Shot in the Dark," "Do or Die," or advantages survivors are required to use.</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-lg text-blue-400">Individual Immunity Win</h3>
+          <span class="text-3xl font-extrabold text-blue-400">$10</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Each time your survivor wins an individual immunity challenge. This stacks — a survivor who wins multiple individual immunities earns $10 per win for each of their two paired players.</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-lg text-slate-200">Runner-Up (2nd Place)</h3>
+          <span class="text-3xl font-extrabold text-slate-200">$100</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">The survivor who finishes in 2nd place at the Final Tribal Council. If two survivors tie for 2nd place, the payout is split between their respective players.</p>
+      </div>
+
+      <div class="bg-slate-900 border border-amber-500/30 rounded-xl p-5 md:col-span-2">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h3 class="font-bold text-lg text-amber-400">&#x1F3C6; Winner (1st Place)</h3>
+          <span class="text-2xl font-extrabold text-amber-400">
+            $580
+            <span class="text-base font-semibold text-amber-400/70">($290 each)</span>
+          </span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">The Sole Survivor takes home everything left in the pot after all other payouts are made.
+        This season's winning survivor paid out the amount above.</p>
+      </div>
+
+    </div>
+
+    
+    <div class="mt-5 bg-amber-500/10 border border-amber-500/20 rounded-xl p-5">
+      <p class="text-amber-200 text-sm leading-relaxed">
+        <strong class="text-amber-300">Important:</strong> Every payout goes to <em>both</em> players paired with a survivor, independently and in full. For example, if your survivor wins individual immunity, you <em>and</em> the other player assigned to that survivor each receive the full $10. The same goes for the runner-up ($100) and winner payouts. You're not splitting with your co-player — you each earn it separately.
+      </p>
+    </div>
+    
+  </section>
+
+  <!-- Footer -->
+  <div class="text-center text-slate-700 text-sm pb-6 border-t border-slate-900 pt-6">
+    
+    <span>Survivor Pool &middot; updated Jul 03, 2026</span>
+    
+  </div>
+
+</main>
+
+<script>
+const ENTRANTS = [{"advantages": 0, "earned": 10.0, "eliminated": true, "finishPlace": 9, "immunities": 1, "name": "Matt Francis", "survivor": "David Kinne", "tribe": "Civa"}, {"advantages": 0, "earned": 10.0, "eliminated": true, "finishPlace": 9, "immunities": 1, "name": "Matt Finelli", "survivor": "David Kinne", "tribe": "Civa"}, {"advantages": 0, "earned": 20.0, "eliminated": true, "finishPlace": 4, "immunities": 2, "name": "Adrienne McGoey", "survivor": "Kamilla Karthigesu", "tribe": "Civa"}, {"advantages": 0, "earned": 20.0, "eliminated": true, "finishPlace": 4, "immunities": 2, "name": "John Menz", "survivor": "Kamilla Karthigesu", "tribe": "Civa"}, {"advantages": 1, "earned": 315.0, "eliminated": true, "finishPlace": 1, "immunities": 2, "name": "Allie Francis", "survivor": "Kyle Fraser", "tribe": "Civa"}, {"advantages": 1, "earned": 315.0, "eliminated": true, "finishPlace": 1, "immunities": 2, "name": "Jack Murphy", "survivor": "Kyle Fraser", "tribe": "Civa"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 5, "immunities": 0, "name": "Kelli Murray", "survivor": "Mitch Guerra", "tribe": "Civa"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 5, "immunities": 0, "name": "Dana Farfalla", "survivor": "Mitch Guerra", "tribe": "Civa"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 13, "immunities": 0, "name": "Jenny Kleber", "survivor": "Charity Nelms", "tribe": "Civa"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 13, "immunities": 0, "name": "Jason Alderisio", "survivor": "Charity Nelms", "tribe": "Civa"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 10, "immunities": 0, "name": "Val Bianchini", "survivor": "Chrissy Sarnowsky", "tribe": "Civa"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 10, "immunities": 0, "name": "Brenda Scott", "survivor": "Chrissy Sarnowsky", "tribe": "Civa"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 8, "immunities": 0, "name": "Margo and Rich Pelka", "survivor": "Star Toomey", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 8, "immunities": 0, "name": "Chris Markham", "survivor": "Star Toomey", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 14, "immunities": 0, "name": "Kevin Going", "survivor": "Bianca Roses", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 14, "immunities": 0, "name": "Chase Turner", "survivor": "Bianca Roses", "tribe": "Lagi"}, {"advantages": 0, "earned": 40.0, "eliminated": true, "finishPlace": 3, "immunities": 4, "name": "Dyanne Going", "survivor": "Joe Hunter", "tribe": "Lagi"}, {"advantages": 0, "earned": 40.0, "eliminated": true, "finishPlace": 3, "immunities": 4, "name": "Chris Murphy", "survivor": "Joe Hunter", "tribe": "Lagi"}, {"advantages": 1, "earned": 115.0, "eliminated": true, "finishPlace": 2, "immunities": 1, "name": "Joe Giammarino", "survivor": "Eva Erickson", "tribe": "Lagi"}, {"advantages": 1, "earned": 115.0, "eliminated": true, "finishPlace": 2, "immunities": 1, "name": "Joy Sobi", "survivor": "Eva Erickson", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 15, "immunities": 0, "name": "Michael Flynn", "survivor": "Thomas Krottinger", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 15, "immunities": 0, "name": "Jan Markham", "survivor": "Thomas Krottinger", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 6, "immunities": 0, "name": "Jack Alderisio", "survivor": "Shauhin Davari", "tribe": "Lagi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 6, "immunities": 0, "name": "Shannon Hopkins", "survivor": "Shauhin Davari", "tribe": "Lagi"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 18, "immunities": 0, "name": "Margaret Cook", "survivor": "Stephanie Berger", "tribe": "Vula"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 18, "immunities": 0, "name": "Allison Sidow", "survivor": "Stephanie Berger", "tribe": "Vula"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 12, "immunities": 0, "name": "Sydney Scott", "survivor": "Saiounia \u201cSai\u201d Hughley", "tribe": "Vula"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 12, "immunities": 0, "name": "Doreen \u0026 Doug Cook", "survivor": "Saiounia \u201cSai\u201d Hughley", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 16, "immunities": 0, "name": "Karla Murphy", "survivor": "Justin Pioppi", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 16, "immunities": 0, "name": "Shannon Reis", "survivor": "Justin Pioppi", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 7, "immunities": 0, "name": "Will Farfalla", "survivor": "Mary Zheng", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 7, "immunities": 0, "name": "Jay Scott", "survivor": "Mary Zheng", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 11, "immunities": 0, "name": "Dawn Bianchini", "survivor": "Cedrek McFadden", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 11, "immunities": 0, "name": "Sean Reis", "survivor": "Cedrek McFadden", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 17, "immunities": 0, "name": "Christina Genovese", "survivor": "Kevin Leung", "tribe": "Vula"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 17, "immunities": 0, "name": "Brian McGoey", "survivor": "Kevin Leung", "tribe": "Vula"}];
+const SEASON_ACTIVE = false;
+const search = document.getElementById('name-search');
+const card = document.getElementById('personal-card');
+
+function ordinal(n) {
+  if (n % 100 >= 11 && n % 100 <= 13) return 'th';
+  return ({1: 'st', 2: 'nd', 3: 'rd'})[n % 10] || 'th';
+}
+
+function updatePersonalCard(term) {
+  const matches = term.length >= 2 ? ENTRANTS.filter(e => e.name.toLowerCase().includes(term)) : [];
+  if (matches.length !== 1) { card.classList.add('hidden'); return; }
+  const m = matches[0];
+
+  document.getElementById('pc-greeting').textContent = 'Hey ' + m.name.split(' ')[0] + '! 👋';
+
+  let pairing = 'Your survivor is ' + m.survivor + ' (' + m.tribe + ' tribe)';
+  if (m.finishPlace === 1) pairing += ' — the WINNER! 🏆';
+  else if (m.finishPlace === 2) pairing += ' — runner-up! 🥈';
+  else if (m.eliminated) pairing += ' — eliminated in ' + m.finishPlace + ordinal(m.finishPlace) + ' place';
+  else if (SEASON_ACTIVE) pairing += ' — still in the game! 🔥';
+  document.getElementById('pc-pairing').textContent = pairing;
+
+  const stats = [];
+  stats.push('<span class="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold">' +
+    (m.earned > 0 ? 'You\'ve earned $' + (m.earned % 1 ? m.earned.toFixed(2) : m.earned) : 'No winnings yet') + '</span>');
+  if (m.immunities > 0) stats.push('<span class="bg-blue-900/40 text-blue-300 px-3 py-1 rounded-full">🛡 ' + m.immunities + 'x immunity</span>');
+  if (m.advantages > 0) stats.push('<span class="bg-purple-900/40 text-purple-300 px-3 py-1 rounded-full">⚡ ' + m.advantages + 'x advantage</span>');
+  document.getElementById('pc-stats').innerHTML = stats.join('');
+  card.classList.remove('hidden');
+}
+
+search.addEventListener('input', () => {
+  const term = search.value.toLowerCase().trim();
+  document.querySelectorAll('.pairing-card').forEach(c => {
+    const match = !term || c.dataset.entrants.includes(term);
+    c.style.opacity = match ? '1' : '0.12';
+    c.style.outline = (term && match) ? '2px solid #f59e0b' : '';
+    c.style.outlineOffset = '2px';
+  });
+  updatePersonalCard(term);
+});
+
+// Live updates: reload when new results are logged (finale-night friendly)
+
+</script>
+</body>
+</html>
