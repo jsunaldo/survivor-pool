@@ -139,9 +139,14 @@
 
     <!-- Personal summary card (filled in by JS when search matches one person) -->
     <div id="personal-card" class="hidden mt-4 bg-gradient-to-br from-amber-950/40 to-slate-900 border border-amber-500/40 rounded-2xl p-5">
-      <div class="text-amber-400 font-bold text-lg mb-1" id="pc-greeting"></div>
-      <div class="text-white text-base mb-2" id="pc-pairing"></div>
-      <div class="flex items-center gap-3 flex-wrap text-sm" id="pc-stats"></div>
+      <div class="flex items-start gap-4">
+        <img id="pc-photo" class="hidden w-16 h-16 rounded-full object-cover object-top flex-shrink-0 border-2 border-amber-500/60" alt="">
+        <div class="flex-1 min-w-0">
+          <div class="text-amber-400 font-bold text-lg mb-1" id="pc-greeting"></div>
+          <div class="text-white text-base mb-2" id="pc-pairing"></div>
+          <div class="flex items-center gap-3 flex-wrap text-sm" id="pc-stats"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -169,16 +174,22 @@
              style="border-color:rgba(234,179,8,0.5);background-color:rgba(120,77,5,0.12);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F3C6;</span>
-                <span>Mike Gabler</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 1st
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #ef4444">M</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F3C6;</span>
+                  <span>Mike Gabler</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 1st
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -226,16 +237,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Owen Knight</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 3rd
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #ef4444">O</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Owen Knight</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 3rd
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -283,16 +300,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Sami Layadi</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 7th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #ef4444">S</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Sami Layadi</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 7th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -325,16 +348,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Elisabeth &#34;Elie&#34; Scott</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 13th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #ef4444">E</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Elisabeth &#34;Elie&#34; Scott</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 13th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -367,16 +396,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Morriah Young</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 18th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #ef4444">M</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Morriah Young</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 18th
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -424,16 +459,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Jeanine Zheng</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 11th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #ef4444">J</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Jeanine Zheng</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 11th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -478,16 +519,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Lindsay Carmine</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 15th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #3b82f6">L</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Lindsay Carmine</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 15th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -520,16 +567,22 @@
              style="border-color:rgba(148,163,184,0.35);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F948;</span>
-                <span>Cassidy Clark</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 2nd
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #3b82f6">C</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F948;</span>
+                  <span>Cassidy Clark</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 2nd
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -577,16 +630,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Geo Bustamante</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 14th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #3b82f6">G</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Geo Bustamante</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 14th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -619,16 +678,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Karla Cruz Godoy</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 5th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #3b82f6">K</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Karla Cruz Godoy</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 5th
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -678,16 +743,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>James Jones</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 10th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #3b82f6">J</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>James Jones</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 10th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -720,16 +791,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Ryan Medrano</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 9th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #3b82f6">R</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Ryan Medrano</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 9th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -774,16 +851,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Cody Assenmacher</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 6th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #22c55e">C</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Cody Assenmacher</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 6th
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -831,16 +914,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Justine Brennan</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 17th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #22c55e">J</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Justine Brennan</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 17th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -873,16 +962,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Nneka Ejere</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 16th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #22c55e">N</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Nneka Ejere</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 16th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -915,16 +1010,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Noelle Lambert</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 8th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #22c55e">N</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Noelle Lambert</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 8th
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -972,16 +1073,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Jesse Lopez</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 4th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #22c55e">J</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Jesse Lopez</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 4th
+                </div>
+                
+              </div>
             </div>
             
             <div class="text-right ml-2 flex-shrink-0">
@@ -1029,16 +1136,22 @@
              style="border-color:rgba(30,41,59,0.8);">
 
           <div class="flex items-start justify-between mb-2">
-            <div class="flex-1 min-w-0 opacity-50">
-              <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
-                <span>&#x1F480;</span>
-                <span>Dwight Moore</span>
-              </div>
+            <div class="flex items-start gap-3 flex-1 min-w-0 opacity-50">
               
-              <div class="text-xs text-slate-500 ml-5">
-                Finished 12th
-              </div>
               
+              <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg flex-shrink-0" style="background-color: #22c55e">D</div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="font-semibold text-white flex items-center gap-1.5 flex-wrap">
+                  <span>&#x1F480;</span>
+                  <span>Dwight Moore</span>
+                </div>
+                
+                <div class="text-xs text-slate-500">
+                  Finished 12th
+                </div>
+                
+              </div>
             </div>
             
           </div>
@@ -1521,7 +1634,7 @@
 </main>
 
 <script>
-const ENTRANTS = [{"advantages": 0, "earned": 300.0, "eliminated": true, "finishPlace": 1, "immunities": 1, "name": "Mike Genovese", "survivor": "Mike Gabler", "tribe": "Baka"}, {"advantages": 0, "earned": 300.0, "eliminated": true, "finishPlace": 1, "immunities": 1, "name": "Chris Markham", "survivor": "Mike Gabler", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 3, "immunities": 3, "name": "Val \u0026 Dawn Bianchini", "survivor": "Owen Knight", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 3, "immunities": 3, "name": "Brian McGoey", "survivor": "Owen Knight", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 7, "immunities": 0, "name": "Rich and Margo Pelka", "survivor": "Sami Layadi", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 7, "immunities": 0, "name": "Adrienne Stuart", "survivor": "Sami Layadi", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 13, "immunities": 0, "name": "Joy Sobi", "survivor": "Elisabeth \"Elie\" Scott", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 13, "immunities": 0, "name": "Sean Reis", "survivor": "Elisabeth \"Elie\" Scott", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 18, "immunities": 0, "name": "Dane Torres", "survivor": "Morriah Young", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 18, "immunities": 0, "name": "Robby McCloughan", "survivor": "Morriah Young", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 11, "immunities": 0, "name": "Joe Giammarino", "survivor": "Jeanine Zheng", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 11, "immunities": 0, "name": "Jimmy Ursini", "survivor": "Jeanine Zheng", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 15, "immunities": 0, "name": "Jack Alderisio", "survivor": "Lindsay Carmine", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 15, "immunities": 0, "name": "Pat Kiernan", "survivor": "Lindsay Carmine", "tribe": "Coco"}, {"advantages": 0, "earned": 130.0, "eliminated": true, "finishPlace": 2, "immunities": 3, "name": "Shannon Going", "survivor": "Cassidy Clark", "tribe": "Coco"}, {"advantages": 0, "earned": 130.0, "eliminated": true, "finishPlace": 2, "immunities": 3, "name": "Matt Lazicky", "survivor": "Cassidy Clark", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 14, "immunities": 0, "name": "Chris Murphy", "survivor": "Geo Bustamante", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 14, "immunities": 0, "name": "Dana Ahrens", "survivor": "Geo Bustamante", "tribe": "Coco"}, {"advantages": 1, "earned": 25.0, "eliminated": true, "finishPlace": 5, "immunities": 2, "name": "Christina Genovese", "survivor": "Karla Cruz Godoy", "tribe": "Coco"}, {"advantages": 1, "earned": 25.0, "eliminated": true, "finishPlace": 5, "immunities": 2, "name": "Dyanne Going", "survivor": "Karla Cruz Godoy", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 10, "immunities": 0, "name": "Jason Alderisio", "survivor": "James Jones", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 10, "immunities": 0, "name": "Shannon Hopkins", "survivor": "James Jones", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 9, "immunities": 0, "name": "Jan Markham", "survivor": "Ryan Medrano", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 9, "immunities": 0, "name": "Matt Francis", "survivor": "Ryan Medrano", "tribe": "Coco"}, {"advantages": 0, "earned": 10.0, "eliminated": true, "finishPlace": 6, "immunities": 1, "name": "Will Farfalla", "survivor": "Cody Assenmacher", "tribe": "Vesi"}, {"advantages": 0, "earned": 10.0, "eliminated": true, "finishPlace": 6, "immunities": 1, "name": "Karla Murphy", "survivor": "Cody Assenmacher", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 17, "immunities": 0, "name": "Margaret Cook", "survivor": "Justine Brennan", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 17, "immunities": 0, "name": "Matt Finelli", "survivor": "Justine Brennan", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 16, "immunities": 0, "name": "Kelli Murray", "survivor": "Nneka Ejere", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 16, "immunities": 0, "name": "Chase Turner", "survivor": "Nneka Ejere", "tribe": "Vesi"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 8, "immunities": 0, "name": "Allie Francis", "survivor": "Noelle Lambert", "tribe": "Vesi"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 8, "immunities": 0, "name": "Sabrina Cunningham", "survivor": "Noelle Lambert", "tribe": "Vesi"}, {"advantages": 2, "earned": 10.0, "eliminated": true, "finishPlace": 4, "immunities": 0, "name": "Allison Sidow", "survivor": "Jesse Lopez", "tribe": "Vesi"}, {"advantages": 2, "earned": 10.0, "eliminated": true, "finishPlace": 4, "immunities": 0, "name": "Kevin Going", "survivor": "Jesse Lopez", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 12, "immunities": 0, "name": "Becky Stem", "survivor": "Dwight Moore", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 12, "immunities": 0, "name": "Amy DiGiammo", "survivor": "Dwight Moore", "tribe": "Vesi"}];
+const ENTRANTS = [{"advantages": 0, "earned": 300.0, "eliminated": true, "finishPlace": 1, "immunities": 1, "name": "Mike Genovese", "photo": null, "survivor": "Mike Gabler", "tribe": "Baka"}, {"advantages": 0, "earned": 300.0, "eliminated": true, "finishPlace": 1, "immunities": 1, "name": "Chris Markham", "photo": null, "survivor": "Mike Gabler", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 3, "immunities": 3, "name": "Val \u0026 Dawn Bianchini", "photo": null, "survivor": "Owen Knight", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 3, "immunities": 3, "name": "Brian McGoey", "photo": null, "survivor": "Owen Knight", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 7, "immunities": 0, "name": "Rich and Margo Pelka", "photo": null, "survivor": "Sami Layadi", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 7, "immunities": 0, "name": "Adrienne Stuart", "photo": null, "survivor": "Sami Layadi", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 13, "immunities": 0, "name": "Joy Sobi", "photo": null, "survivor": "Elisabeth \"Elie\" Scott", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 13, "immunities": 0, "name": "Sean Reis", "photo": null, "survivor": "Elisabeth \"Elie\" Scott", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 18, "immunities": 0, "name": "Dane Torres", "photo": null, "survivor": "Morriah Young", "tribe": "Baka"}, {"advantages": 0, "earned": 30.0, "eliminated": true, "finishPlace": 18, "immunities": 0, "name": "Robby McCloughan", "photo": null, "survivor": "Morriah Young", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 11, "immunities": 0, "name": "Joe Giammarino", "photo": null, "survivor": "Jeanine Zheng", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 11, "immunities": 0, "name": "Jimmy Ursini", "photo": null, "survivor": "Jeanine Zheng", "tribe": "Baka"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 15, "immunities": 0, "name": "Jack Alderisio", "photo": null, "survivor": "Lindsay Carmine", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 15, "immunities": 0, "name": "Pat Kiernan", "photo": null, "survivor": "Lindsay Carmine", "tribe": "Coco"}, {"advantages": 0, "earned": 130.0, "eliminated": true, "finishPlace": 2, "immunities": 3, "name": "Shannon Going", "photo": null, "survivor": "Cassidy Clark", "tribe": "Coco"}, {"advantages": 0, "earned": 130.0, "eliminated": true, "finishPlace": 2, "immunities": 3, "name": "Matt Lazicky", "photo": null, "survivor": "Cassidy Clark", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 14, "immunities": 0, "name": "Chris Murphy", "photo": null, "survivor": "Geo Bustamante", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 14, "immunities": 0, "name": "Dana Ahrens", "photo": null, "survivor": "Geo Bustamante", "tribe": "Coco"}, {"advantages": 1, "earned": 25.0, "eliminated": true, "finishPlace": 5, "immunities": 2, "name": "Christina Genovese", "photo": null, "survivor": "Karla Cruz Godoy", "tribe": "Coco"}, {"advantages": 1, "earned": 25.0, "eliminated": true, "finishPlace": 5, "immunities": 2, "name": "Dyanne Going", "photo": null, "survivor": "Karla Cruz Godoy", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 10, "immunities": 0, "name": "Jason Alderisio", "photo": null, "survivor": "James Jones", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 10, "immunities": 0, "name": "Shannon Hopkins", "photo": null, "survivor": "James Jones", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 9, "immunities": 0, "name": "Jan Markham", "photo": null, "survivor": "Ryan Medrano", "tribe": "Coco"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 9, "immunities": 0, "name": "Matt Francis", "photo": null, "survivor": "Ryan Medrano", "tribe": "Coco"}, {"advantages": 0, "earned": 10.0, "eliminated": true, "finishPlace": 6, "immunities": 1, "name": "Will Farfalla", "photo": null, "survivor": "Cody Assenmacher", "tribe": "Vesi"}, {"advantages": 0, "earned": 10.0, "eliminated": true, "finishPlace": 6, "immunities": 1, "name": "Karla Murphy", "photo": null, "survivor": "Cody Assenmacher", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 17, "immunities": 0, "name": "Margaret Cook", "photo": null, "survivor": "Justine Brennan", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 17, "immunities": 0, "name": "Matt Finelli", "photo": null, "survivor": "Justine Brennan", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 16, "immunities": 0, "name": "Kelli Murray", "photo": null, "survivor": "Nneka Ejere", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 16, "immunities": 0, "name": "Chase Turner", "photo": null, "survivor": "Nneka Ejere", "tribe": "Vesi"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 8, "immunities": 0, "name": "Allie Francis", "photo": null, "survivor": "Noelle Lambert", "tribe": "Vesi"}, {"advantages": 1, "earned": 5.0, "eliminated": true, "finishPlace": 8, "immunities": 0, "name": "Sabrina Cunningham", "photo": null, "survivor": "Noelle Lambert", "tribe": "Vesi"}, {"advantages": 2, "earned": 10.0, "eliminated": true, "finishPlace": 4, "immunities": 0, "name": "Allison Sidow", "photo": null, "survivor": "Jesse Lopez", "tribe": "Vesi"}, {"advantages": 2, "earned": 10.0, "eliminated": true, "finishPlace": 4, "immunities": 0, "name": "Kevin Going", "photo": null, "survivor": "Jesse Lopez", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 12, "immunities": 0, "name": "Becky Stem", "photo": null, "survivor": "Dwight Moore", "tribe": "Vesi"}, {"advantages": 0, "earned": 0.0, "eliminated": true, "finishPlace": 12, "immunities": 0, "name": "Amy DiGiammo", "photo": null, "survivor": "Dwight Moore", "tribe": "Vesi"}];
 const SEASON_ACTIVE = false;
 const search = document.getElementById('name-search');
 const card = document.getElementById('personal-card');
@@ -1535,6 +1648,14 @@ function updatePersonalCard(term) {
   const matches = term.length >= 2 ? ENTRANTS.filter(e => e.name.toLowerCase().includes(term)) : [];
   if (matches.length !== 1) { card.classList.add('hidden'); return; }
   const m = matches[0];
+
+  const photo = document.getElementById('pc-photo');
+  if (m.photo) {
+    photo.src = m.photo;
+    photo.classList.remove('hidden');
+  } else {
+    photo.classList.add('hidden');
+  }
 
   document.getElementById('pc-greeting').textContent = 'Hey ' + m.name.split(' ')[0] + '! 👋';
 
